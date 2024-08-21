@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button>Heads</button>
+    <button>Tails</button>
+    <script>
+    /*Coin-flip game*/
+    //6f. Generate a random number with Math.random(). Save it in a variable.
+
+    /*6g.  Create an if-statement and check:
+     * If the number is less than 0.5 then display 'heads' on the console.
+     * Else display 'tails' in the console.
+      */
+
+      /*6h.  Instead of display 'heads or tails' in the console, save the result
+      in a variable called 'result'.
+      */
+
+      /*6i.  Let's say we're trying to guess the result. Create a variable called 'guess'
+      and save your guess ('heads' or 'tails').
+          * If your guess matches the result, display 'You win!' in the console
+          * If your guess does not match the result, display "You lose!"
+      */
+        const randomNumber = Math.random();
+        let result = '';
+
+        if (randomNumber <= 0.5) {
+            result = 'Heads'
+        } else {
+            result = 'Tails'
+        } console.log(result);
+        
+        const guess = 'Tails';
+        if (guess === result) {
+            console.log('You win')
+        } else  {
+            console.log('You lose')
+        }
+       //6j. Instead of usinf if-statements in the previous exercises, try switching them into tenary operators
+       //(condition ? A : B)
+        guess === result ? 'You win' : 'You lose';
+    </script>
+</body>
+</html>
